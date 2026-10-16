@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Capital gains tax - Grok</title></head>
+<body>
+<!-- Modelled on the grok.com transcript as recorded by an open-source userscript (2026-09-29):
+     div[id^="response-"] > .message-bubble[role=article][data-testid=user-message|assistant-message]
+     > .response-content-markdown; .thinking-container and .action-buttons are UI chrome. -->
+<div data-testid="chat-transcript-scroller">
+  <div id="response-11111111-1111-4111-8111-111111111111" class="relative group flex items-end">
+    <div dir="auto" role="article" aria-label="You" data-testid="user-message" class="message-bubble">
+      <div class="relative"><div class="relative response-content-markdown markdown">
+        <p dir="auto" class="break-words" node="[object Object]" style="white-space: pre-wrap;">Does a higher capital gains tax raise revenue?<br>Assume the rate doubles.</p>
+      </div></div>
+      <section class="inline-media-container flex flex-col"></section>
+    </div>
+    <div class="action-buttons flex"><button type="button">Edit</button><button type="button">Copy</button></div>
+  </div>
+  <div id="response-22222222-2222-4222-8222-222222222222" class="relative group flex items-start">
+    <div dir="auto" role="article" aria-label="Grok" data-testid="assistant-message" class="message-bubble">
+      <div class="thinking-container mb-1"><div><button type="button" data-testid="canvas-trigger" aria-expanded="false"><span>Worked for 12s</span></button><div aria-hidden="true">SECRET thinking</div></div></div>
+      <div class="relative"><div class="relative response-content-markdown markdown">
+        <div class="streamdown-chat-md"><div>
+          <p dir="auto">It depends on the elasticity of realisations.</p>
+          <h2 dir="auto">Three effects</h2>
+          <ul dir="auto"><li><strong>Timing.</strong> Owners choose when to sell.</li><li><strong>Lock-in.</strong> Capital stays put.</li></ul>
+          <p dir="auto">See <a href="https://www.cbo.gov/publication/example" target="_blank" class="no-copy citation">⁠CBO</a>.</p>
+          <div dir="auto" class="not-prose">
+            <div class="chat-code-block relative not-prose" data-testid="code-block">
+              <div class="rounded-xl">
+                <div class="group/code-header flex"><span class="font-mono text-xs">Bash</span><div class="ml-auto"><button type="button" aria-label="Copy"><span aria-hidden="true"><span>Copy</span><span>Copied</span></span></button></div></div>
+                <div class="shiki not-prose relative"><pre class="shiki slack-dark" tabindex="0"><code><span class="line"><span>curl</span><span> -X POST</span></span>
+<span class="line"></span>
+<span class="line"><span>echo done</span></span></code></pre></div>
+              </div>
+            </div>
+          </div>
+          <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>revenue</mtext></mrow><annotation encoding="application/x-tex">\text{revenue} = \text{rate} \times \text{base}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base">revenue=rate×base</span></span></span></span>
+          <table data-streamdown="table-body"><thead><tr><th>Rate</th><th>Revenue</th></tr></thead><tbody><tr><td>20%</td><td>100</td></tr><tr><td>40%</td><td>90</td></tr></tbody></table>
+        </div></div>
+      </div></div>
+      <section class="inline-media-container"></section>
+    </div>
+    <div class="action-buttons flex"><button type="button">Copy</button><button type="button">Retry</button></div>
+  </div>
+</div>
+</body></html>

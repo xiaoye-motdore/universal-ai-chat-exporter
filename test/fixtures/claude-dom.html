@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><title>Parser design - Claude</title></head>
+<body>
+<div data-test-render-count="2">
+  <div class="group">
+    <div data-testid="user-message" class="font-user-message"><p>Write a parser</p><pre><code>input: 1,2,3</code></pre></div>
+  </div>
+  <div data-is-streaming="false">
+    <div class="font-claude-response">
+      <div class="standard-markdown"><p>Here is a parser:</p>
+        <div><div class="label">javascript</div><div><pre><code class="language-javascript">const parse = (s) =&gt; s.split(',')</code></pre></div></div>
+      </div>
+      <button class="group/status">Searched the web</button>
+      <div class="standard-markdown"><ul><li>Handles commas</li><li>Returns strings</li></ul></div>
+    </div>
+  </div>
+</div>
+</body></html>

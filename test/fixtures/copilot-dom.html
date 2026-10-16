@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><title>Microsoft Copilot: Your AI companion</title></head>
+<body>
+<!-- Modelled on the consumer Copilot chat page as recorded by an open-source userscript:
+     .group/user-message > [data-content="user-message"]; .group/ai-message > .group/ai-message-item;
+     the sidebar's selected [role=option] carries the conversation title. -->
+<nav><div role="listbox"><div role="option" aria-selected="false"><p>Older chat</p></div><div role="option" aria-selected="true" aria-label="Chat, Weekend plans"><p>Weekend plans</p></div></div></nav>
+<main>
+  <div class="group/user-message flex"><div data-content="user-message"><p>Suggest a weekend plan in Lisbon.</p></div></div>
+  <div class="group/ai-message flex">
+    <div class="group/ai-message-item">
+      <p>Here is a two-day plan:</p>
+      <h2>Saturday</h2>
+      <ul><li>Alfama walk</li><li>Tram 28</li></ul>
+      <div><div>python</div><div><pre><code>print("olá")</code></pre></div></div>
+      <table><tr><th>Day</th><th>Area</th></tr><tr><td>1</td><td>Alfama</td></tr></table>
+    </div>
+    <div data-testid="message-item-reactions"><button>Like</button><button>Dislike</button></div>
+  </div>
+  <div class="group/user-message flex"><div data-content="user-message"><p>Thanks!</p></div></div>
+  <div class="group/ai-message flex"><div class="group/ai-message-item"><p>Enjoy your trip.</p></div></div>
+</main>
+</body></html>

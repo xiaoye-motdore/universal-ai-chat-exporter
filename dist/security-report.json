@@ -1,0 +1,3823 @@
+{
+  "ok": true,
+  "checks": 763,
+  "failed": 0,
+  "findings": [],
+  "details": [
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/_shared.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/chatgpt.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/claude.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/copilot.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/deepseek.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/gemini.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/grok.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/perplexity.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/adapters/planned.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/adapter.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/dom-to-markdown.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/download.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/filename.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/i18n.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/markdown-to-html.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/net.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/registry.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/run.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/schema.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/core/ui.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/formatters/html.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/formatters/json.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/formatters/markdown.js"
+    },
+    {
+      "name": "src forbidden API (eval)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (Function constructor)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (importScripts)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (dynamic import)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (WebSocket)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (EventSource)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (document.cookie)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (localStorage)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (indexedDB)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (Cache API)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (service worker)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (innerHTML)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (outerHTML)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (DOMParser)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (document.write)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (script element creation)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (iframe creation)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (extension API)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (string setInterval)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (window.open)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src forbidden API (navigation)",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src fetch outside net.js",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src absolute URL",
+      "ok": true,
+      "detail": "src/main.js"
+    },
+    {
+      "name": "src: fetch confined to net.js",
+      "ok": true,
+      "detail": "net.js must own the only fetch call"
+    },
+    {
+      "name": "net.js enforces same origin",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "net.js enforces path allow-list",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "net.js refuses redirects",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "net.js uses same-origin credentials only",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bookmarklet has javascript: prefix",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bookmarklet decodes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "bookmarklet == void + minified bundle",
+      "ok": true,
+      "detail": "the shipped URL must be exactly the audited bundle"
+    },
+    {
+      "name": "bookmarklet sha256 matches dist/*.sha256",
+      "ok": true,
+      "detail": "a91f0092668893503b8757be14d5d71b25df351ef5131427782e0120e9e31afb"
+    },
+    {
+      "name": "dist forbidden API (eval)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (Function constructor)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (importScripts)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (dynamic import)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (XMLHttpRequest)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (WebSocket)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (EventSource)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (navigator.sendBeacon)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (document.cookie)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (localStorage)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (sessionStorage)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (indexedDB)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (Cache API)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (service worker)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (innerHTML)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (outerHTML)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (insertAdjacentHTML)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (DOMParser)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (document.write)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (script element creation)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (iframe creation)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (extension API)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (extension API)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (string setTimeout)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (string setInterval)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (unrelated device/credential API)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (window.open)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist forbidden API (navigation)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist contains no absolute URLs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist has exactly one fetch call site",
+      "ok": true,
+      "detail": "found 1"
+    },
+    {
+      "name": "dist uses no cookies/storage",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dist size within limit",
+      "ok": true,
+      "detail": "64510 bytes"
+    },
+    {
+      "name": "install.html embeds the exact bookmarklet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "install.html loads nothing remote",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

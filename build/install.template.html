@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:">
+<title>AI Chat Export · 安装</title>
+<style>
+:root{color-scheme:light dark;--bg:#f5f5f7;--card:#fff;--fg:#1d1d1f;--muted:#6e6e73;--line:#e5e5ea;--accent:#2563eb}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--card:#1c1c21;--fg:#e8e8ea;--muted:#a1a1a6;--line:#2c2c33;--accent:#60a5fa}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:28px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
+.drag{display:flex;flex-direction:column;align-items:center;gap:14px;padding:30px 20px;border:2px dashed var(--line);border-radius:14px;text-align:center}
+.bm{display:inline-block;padding:12px 26px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;font-size:17px;text-decoration:none;cursor:grab;user-select:none}
+.bm:active{cursor:grabbing}
+.hint{color:var(--muted);font-size:14px;margin:0}
+ol,ul{padding-left:22px}
+li{margin:4px 0}
+code,pre{font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+code{background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+pre{background:rgba(127,127,127,.12);padding:10px 12px;border-radius:8px;overflow:auto;white-space:pre-wrap;word-break:break-all;max-height:160px}
+button{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+button:hover{border-color:var(--accent)}
+details summary{cursor:pointer;font-weight:600}
+.meta{color:var(--muted);font-size:13px}
+.ok{color:#15803d}.warn{color:#b45309}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+</style>
+</head>
+<body>
+<main>
+<h1>AI Chat Export</h1>
+<p class="sub">一个书签，导出 ChatGPT / Claude / Gemini 的当前完整对话为 Markdown、JSON 或 HTML。本地运行，无扩展，无服务器。</p>
+
+<div class="card">
+  <div class="drag">
+    <a class="bm" id="bm" href="{{BOOKMARKLET_HREF}}" draggable="true">AI Chat Export</a>
+    <p class="hint" id="hint">把上面的按钮拖到浏览器书签栏（Chrome：按 <code>⌘⇧B</code> / <code>Ctrl+Shift+B</code> 显示书签栏）。在本页点击它不会有任何效果。</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>使用方法</h2>
+  <ol>
+    <li>打开任意一个支持的对话页面：<code>chatgpt.com/c/…</code>、<code>claude.ai/chat/…</code>、<code>gemini.google.com/app/…</code>。</li>
+    <li>点击书签栏上的 <strong>AI Chat Export</strong>。</li>
+    <li>页面右上角出现面板，显示读取到的消息数量和完整性提示。</li>
+    <li>点击 <strong>Markdown</strong>、<strong>JSON</strong> 或 <strong>HTML</strong> 下载文件。文件名包含平台、日期和对话标题。</li>
+  </ol>
+  <p class="meta">在不支持的网站上点击书签，会显示“当前网站不受支持”的提示。Grok、DeepSeek、Perplexity、Copilot 目前只做识别，导出尚未实现。</p>
+</div>
+
+<div class="card">
+  <h2>它做什么、不做什么</h2>
+  <table>
+    <tr><th>行为</th><th>说明</th></tr>
+    <tr><td class="ok">✔ 本地执行</td><td>全部代码内嵌在书签里，点击时才运行，运行完即结束。</td></tr>
+    <tr><td class="ok">✔ 只读当前站点</td><td>只向你当前打开的平台发出它自己也在用的同源请求，读取当前对话。</td></tr>
+    <tr><td class="ok">✔ 文件直接下载</td><td>导出内容只写入本地文件，不会存入浏览器存储，也不会发送到任何地方。</td></tr>
+    <tr><td class="warn">✘ 不上传、不追踪</td><td>没有第三方请求、遥测、广告、自动更新或远程脚本。</td></tr>
+    <tr><td class="warn">✘ 不碰 Cookie / Token</td><td>脚本不读取 <code>document.cookie</code> 或任何浏览器存储；浏览器自行附带会话。</td></tr>
+    <tr><td class="warn">✘ 不修改对话</td><td>只读取，不会向平台写入或改动任何内容。</td></tr>
+  </table>
+  <p class="meta">详细说明见 <code>SECURITY.md</code>。</p>
+</div>
+
+<div class="card">
+  <details>
+    <summary>手动安装 / 校验</summary>
+    <p>如果无法拖拽：新建一个书签，名称填 <code>AI Chat Export</code>，网址粘贴下面的代码。</p>
+    <p><button id="copy">复制书签代码</button> <span id="copied" class="meta"></span></p>
+    <pre id="code"></pre>
+    <p class="meta">版本 {{VERSION}} · 大小 {{SIZE_KB}} KB · SHA-256：<code>{{SHA256}}</code><br>
+    该哈希与 <code>dist/ai-chat-export.bookmarklet.sha256</code> 一致；运行 <code>npm run verify</code> 可从源码重新生成并比对。</p>
+  </details>
+</div>
+</main>
+<script>
+(function () {
+  var bm = document.getElementById('bm');
+  var hint = document.getElementById('hint');
+  var code = document.getElementById('code');
+  var copy = document.getElementById('copy');
+  code.textContent = bm.getAttribute('href');
+  bm.addEventListener('click', function (e) {
+    e.preventDefault();
+    hint.textContent = '请把按钮拖到书签栏，而不是点击。然后在 ChatGPT / Claude / Gemini 的对话页面点击书签。';
+  });
+  copy.addEventListener('click', function () {
+    var text = bm.getAttribute('href');
+    var done = function () { document.getElementById('copied').textContent = '已复制'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { selectCode(); });
+    } else {
+      selectCode();
+    }
+  });
+  function selectCode() {
+    var range = document.createRange();
+    range.selectNodeContents(code);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    document.getElementById('copied').textContent = '请手动复制已选中的代码';
+  }
+})();
+</script>
+</body>
+</html>

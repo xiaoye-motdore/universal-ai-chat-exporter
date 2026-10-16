@@ -1,0 +1,11 @@
+{
+  "name": "universal-ai-chat-exporter",
+  "version": "1.0.0",
+  "bookmarkletSha256": "a91f0092668893503b8757be14d5d71b25df351ef5131427782e0120e9e31afb",
+  "bytes": {
+    "readable": 82352,
+    "minified": 51090,
+    "bookmarklet": 64510
+  },
+  "limitBytes": 65536
+}

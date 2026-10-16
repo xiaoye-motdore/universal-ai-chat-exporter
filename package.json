@@ -1,0 +1,23 @@
+{
+  "name": "universal-ai-chat-exporter",
+  "version": "1.0.0",
+  "description": "One bookmarklet that exports the current ChatGPT, Claude or Gemini conversation to Markdown, JSON or HTML. Local-only, no extension, no servers.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test \"test/*.test.js\"",
+    "audit:security": "node src/security/validate.js",
+    "verify": "npm run build && npm run audit:security && npm test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeheather1998-sys/universal-ai-chat-exporter.git"
+  },
+  "homepage": "https://github.com/yeheather1998-sys/universal-ai-chat-exporter#readme"
+}
