@@ -108,6 +108,7 @@ export async function run(env) {
       statusText: status,
       metaText: meta,
       warnings,
+      partial: conv.completeness === 'partial',
       buttons: FORMATS.map((f) => ({
         label: f.label,
         onClick: () => downloadText(f.render(conv), buildFilename(adapter.id, conv.title, f.ext), f.mime, doc),

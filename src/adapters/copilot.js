@@ -32,7 +32,6 @@ const adapter = {
   id: 'copilot',
   name: 'Microsoft Copilot',
   status: STATUS.EXPERIMENTAL,
-  hosts: ['copilot.microsoft.com', 'copilot.com'],
   allowedPaths: [/^\/c\/api\/conversations\/[A-Za-z0-9_-]+\/history$/],
 
   matches: (location) => location.hostname === 'copilot.microsoft.com' || /(^|\.)copilot\.com$/.test(location.hostname),

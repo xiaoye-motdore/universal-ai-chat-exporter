@@ -15,7 +15,6 @@ export const planned = [
     id: 'deepseek',
     name: 'DeepSeek',
     status: STATUS.PLANNED,
-    hosts: ['chat.deepseek.com'],
     allowedPaths: [],
     matches: (location) => location.hostname === 'chat.deepseek.com',
     conversationId: () => null,

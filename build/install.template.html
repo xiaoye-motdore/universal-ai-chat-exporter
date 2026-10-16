@@ -6,79 +6,114 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:">
 <title>AI Chat Export · 安装</title>
 <style>
-:root{color-scheme:light dark;--bg:#f5f5f7;--card:#fff;--fg:#1d1d1f;--muted:#6e6e73;--line:#e5e5ea;--accent:#2563eb}
-@media (prefers-color-scheme:dark){:root{--bg:#121214;--card:#1c1c21;--fg:#e8e8ea;--muted:#a1a1a6;--line:#2c2c33;--accent:#60a5fa}}
+:root{color-scheme:light dark;--bg:#f6f7fb;--card:#fff;--fg:#1a1a22;--mut:#6b6b78;--line:#e7e7ee;--acc:#5b6cff;--acc2:#b36bff;--ok:#16a34a;--warn:#d97706;--chip:#f1f2f8}
+@media (prefers-color-scheme:dark){:root{--bg:#121318;--card:#1d1d24;--fg:#f2f2f6;--mut:#9f9fac;--line:#34343f;--acc:#7b8aff;--acc2:#c08cff;--ok:#4ade80;--warn:#fbbf24;--chip:#2a2a34}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
-main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
-h1{font-size:28px;margin:0 0 4px}
-.sub{color:var(--muted);margin:0 0 28px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
-.drag{display:flex;flex-direction:column;align-items:center;gap:14px;padding:30px 20px;border:2px dashed var(--line);border-radius:14px;text-align:center}
-.bm{display:inline-block;padding:12px 26px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;font-size:17px;text-decoration:none;cursor:grab;user-select:none}
-.bm:active{cursor:grabbing}
-.hint{color:var(--muted);font-size:14px;margin:0}
-ol,ul{padding-left:22px}
-li{margin:4px 0}
-code,pre{font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-code{background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
-pre{background:rgba(127,127,127,.12);padding:10px 12px;border-radius:8px;overflow:auto;white-space:pre-wrap;word-break:break-all;max-height:160px}
-button{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
-button:hover{border-color:var(--accent)}
-details summary{cursor:pointer;font-weight:600}
-.meta{color:var(--muted);font-size:13px}
-.ok{color:#15803d}.warn{color:#b45309}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th,td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+body::before{content:"";position:fixed;inset:-40vh -20vw auto;height:70vh;background:radial-gradient(60% 60% at 30% 40%,#6f86ff2e,transparent 70%),radial-gradient(50% 50% at 75% 30%,#b36bff26,transparent 70%);pointer-events:none;z-index:0}
+main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:56px 20px 80px}
+.hero{text-align:center;margin-bottom:28px}
+.logo{display:inline-flex;width:64px;height:64px;border-radius:18px;align-items:center;justify-content:center;font-size:32px;background:linear-gradient(135deg,#6f86ff,#b36bff);box-shadow:0 10px 30px #6f86ff59;margin-bottom:14px}
+h1{font-size:34px;letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--mut);margin:0 auto;max-width:560px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin:18px 0;box-shadow:0 8px 30px #14142812}
+.drag{display:flex;flex-direction:column;align-items:center;gap:14px;padding:34px 20px 26px;border:2px dashed var(--line);border-radius:16px;text-align:center}
+.bm{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:999px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;font-weight:700;font-size:19px;text-decoration:none;cursor:grab;user-select:none;box-shadow:0 10px 28px #5b6cff59;transition:transform .15s,box-shadow .15s}
+.bm:hover{transform:translateY(-2px);box-shadow:0 14px 34px #5b6cff73}
+.bm:active{cursor:grabbing;transform:scale(.98)}
+.hint{color:var(--mut);font-size:14px;margin:0}
+.arrow{font-size:13px;color:var(--acc);font-weight:600;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:var(--chip);font-size:13px;font-weight:600}
+.chip .ok{color:var(--ok)}.chip .exp{color:var(--warn)}.chip .plan{color:var(--mut)}
+h2{font-size:18px;margin:0 0 14px;letter-spacing:-.01em}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.step{background:var(--chip);border-radius:14px;padding:16px 16px 14px}
+.step b{display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;align-items:center;justify-content:center;font-size:13px;margin-bottom:8px}
+.step p{margin:0;font-size:14px;line-height:1.55}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two ul{list-style:none;padding:0;margin:0}
+.two li{padding:7px 0;border-top:1px solid var(--line);font-size:14px;display:flex;gap:9px}
+.two li:first-child{border-top:0}
+.two li i{font-style:normal;flex:none}
+.yes i{color:var(--ok)}.no i{color:#ef4444}
+code,pre{font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+code{background:var(--chip);padding:1px 6px;border-radius:6px}
+pre{background:var(--chip);padding:12px 14px;border-radius:12px;overflow:auto;white-space:pre-wrap;word-break:break-all;max-height:150px}
+button{font:inherit;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;font-weight:600}
+button:hover{border-color:var(--acc);color:var(--acc)}
+details summary{cursor:pointer;font-weight:700;font-size:16px}
+.meta{color:var(--mut);font-size:13px;word-break:break-all}
+footer{text-align:center;color:var(--mut);font-size:13px;margin-top:30px}
+footer a{color:var(--acc);text-decoration:none}
+@media (max-width:640px){.steps,.two{grid-template-columns:1fr}h1{font-size:28px}.card{padding:20px}}
 </style>
 </head>
 <body>
 <main>
-<h1>AI Chat Export</h1>
-<p class="sub">一个书签，导出 ChatGPT / Claude / Gemini 的当前完整对话为 Markdown、JSON 或 HTML。本地运行，无扩展，无服务器。</p>
+<div class="hero">
+  <div class="logo">📤</div>
+  <h1>AI Chat Export</h1>
+  <p class="sub">一个书签，把 ChatGPT、Claude、Gemini、Grok、Perplexity 的当前对话完整导出为 Markdown、JSON 或 HTML。本地运行，无扩展，无服务器。</p>
+</div>
 
 <div class="card">
   <div class="drag">
-    <a class="bm" id="bm" href="{{BOOKMARKLET_HREF}}" draggable="true">AI Chat Export</a>
-    <p class="hint" id="hint">把上面的按钮拖到浏览器书签栏（Chrome：按 <code>⌘⇧B</code> / <code>Ctrl+Shift+B</code> 显示书签栏）。在本页点击它不会有任何效果。</p>
+    <a class="bm" id="bm" href="{{BOOKMARKLET_HREF}}" draggable="true">📤 AI Chat Export</a>
+    <span class="arrow" id="arrow">↑ 把这个按钮拖到书签栏</span>
+    <p class="hint" id="hint">Chrome 按 <code>⌘⇧B</code> / <code>Ctrl+Shift+B</code> 显示书签栏。在本页点击按钮没有效果，请拖拽。</p>
+  </div>
+  <div class="chips">
+    <span class="chip"><i class="ok">✓</i>ChatGPT</span>
+    <span class="chip"><i class="ok">✓</i>Claude</span>
+    <span class="chip"><i class="ok">✓</i>Gemini</span>
+    <span class="chip"><i class="ok">✓</i>Grok</span>
+    <span class="chip"><i class="ok">✓</i>Perplexity</span>
+    <span class="chip"><i class="exp">◐</i>Copilot 实验</span>
+    <span class="chip"><i class="plan">○</i>DeepSeek 计划中</span>
   </div>
 </div>
 
 <div class="card">
-  <h2>使用方法</h2>
-  <ol>
-    <li>打开任意一个支持的对话页面：<code>chatgpt.com/c/…</code>、<code>claude.ai/chat/…</code>、<code>gemini.google.com/app/…</code>。</li>
-    <li>点击书签栏上的 <strong>AI Chat Export</strong>。</li>
-    <li>页面右上角出现面板，显示读取到的消息数量和完整性提示。</li>
-    <li>点击 <strong>Markdown</strong>、<strong>JSON</strong> 或 <strong>HTML</strong> 下载文件。文件名包含平台、日期和对话标题。</li>
-  </ol>
-  <p class="meta">在不支持的网站上点击书签，会显示“当前网站不受支持”的提示。Grok、DeepSeek、Perplexity、Copilot 目前只做识别，导出尚未实现。</p>
+  <h2>三步导出</h2>
+  <div class="steps">
+    <div class="step"><b>1</b><p>打开任意一条支持平台的对话页面。</p></div>
+    <div class="step"><b>2</b><p>点击书签栏上的 <strong>📤 AI Chat Export</strong>，右上角出现面板。</p></div>
+    <div class="step"><b>3</b><p>看一眼消息数和完整性提示，点 Markdown / JSON / HTML 下载。</p></div>
+  </div>
 </div>
 
 <div class="card">
-  <h2>它做什么、不做什么</h2>
-  <table>
-    <tr><th>行为</th><th>说明</th></tr>
-    <tr><td class="ok">✔ 本地执行</td><td>全部代码内嵌在书签里，点击时才运行，运行完即结束。</td></tr>
-    <tr><td class="ok">✔ 只读当前站点</td><td>只向你当前打开的平台发出它自己也在用的同源请求，读取当前对话。</td></tr>
-    <tr><td class="ok">✔ 文件直接下载</td><td>导出内容只写入本地文件，不会存入浏览器存储，也不会发送到任何地方。</td></tr>
-    <tr><td class="warn">✘ 不上传、不追踪</td><td>没有第三方请求、遥测、广告、自动更新或远程脚本。</td></tr>
-    <tr><td class="warn">✘ 不碰 Cookie / Token</td><td>脚本不读取 <code>document.cookie</code> 或任何浏览器存储；浏览器自行附带会话。</td></tr>
-    <tr><td class="warn">✘ 不修改对话</td><td>只读取，不会向平台写入或改动任何内容。</td></tr>
-  </table>
-  <p class="meta">详细说明见 <code>SECURITY.md</code>。</p>
+  <h2>它做什么，不做什么</h2>
+  <div class="two">
+    <ul class="yes">
+      <li><i>✓</i>全部代码内嵌在书签里，点击时才运行</li>
+      <li><i>✓</i>只向当前平台发它自己也在用的同源请求</li>
+      <li><i>✓</i>导出内容直接写入本地文件</li>
+      <li><i>✓</i>保留分支、附件元数据、代码、表格、公式</li>
+    </ul>
+    <ul class="no">
+      <li><i>✘</i>不上传、不遥测、不加载远程脚本</li>
+      <li><i>✘</i>不读 Cookie，不碰浏览器存储</li>
+      <li><i>✘</i>不修改任何聊天内容</li>
+      <li><i>✘</i>不跨网站读取，只看当前打开的对话</li>
+    </ul>
+  </div>
+  <p class="meta" style="margin:14px 0 0">详细说明见项目里的 <code>SECURITY.md</code>。</p>
 </div>
 
 <div class="card">
   <details>
     <summary>手动安装 / 校验</summary>
-    <p>如果无法拖拽：新建一个书签，名称填 <code>AI Chat Export</code>，网址粘贴下面的代码。</p>
+    <p>无法拖拽时：新建一个书签，名称填 <code>📤 AI Chat Export</code>，网址粘贴下面的代码。</p>
     <p><button id="copy">复制书签代码</button> <span id="copied" class="meta"></span></p>
     <pre id="code"></pre>
-    <p class="meta">版本 {{VERSION}} · 大小 {{SIZE_KB}} KB · SHA-256：<code>{{SHA256}}</code><br>
-    该哈希与 <code>dist/ai-chat-export.bookmarklet.sha256</code> 一致；运行 <code>npm run verify</code> 可从源码重新生成并比对。</p>
+    <p class="meta">版本 {{VERSION}} · 大小 {{SIZE_KB}} KB · SHA-256 <code>{{SHA256}}</code><br>与 <code>dist/ai-chat-export.bookmarklet.sha256</code> 一致；运行 <code>npm run verify</code> 可从源码重新生成并比对。</p>
   </details>
 </div>
+
+<footer>MIT 开源 · <a href="https://github.com/xiaoye-motdore/universal-ai-chat-exporter" rel="noopener">GitHub 仓库</a></footer>
 </main>
 <script>
 (function () {
@@ -89,7 +124,7 @@ th,td{border:1px solid var(--line);padding:6px 10px;text-align:left}
   code.textContent = bm.getAttribute('href');
   bm.addEventListener('click', function (e) {
     e.preventDefault();
-    hint.textContent = '请把按钮拖到书签栏，而不是点击。然后在 ChatGPT / Claude / Gemini 的对话页面点击书签。';
+    hint.textContent = '请把按钮拖到书签栏，而不是点击。然后到 ChatGPT / Claude / Gemini / Grok / Perplexity 的对话页面点击书签。';
   });
   copy.addEventListener('click', function () {
     var text = bm.getAttribute('href');

@@ -7,7 +7,7 @@
  *     id:      'chatgpt'                     // used in filenames and the JSON export
  *     name:    'ChatGPT'                     // shown in the UI
  *     status:  'verified' | 'experimental' | 'planned'
- *     hosts:   ['chatgpt.com']               // informational
+ *     (no hosts list: matches() is the single source of truth)
  *     allowedPaths: [/^\/backend-api\//]     // same-origin paths this adapter may request.
  *                                            // The network guard refuses everything else.
  *     matches(location)        -> boolean    // is this the right adapter for the page?

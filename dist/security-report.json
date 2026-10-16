@@ -3647,7 +3647,7 @@
     {
       "name": "bookmarklet sha256 matches dist/*.sha256",
       "ok": true,
-      "detail": "a91f0092668893503b8757be14d5d71b25df351ef5131427782e0120e9e31afb"
+      "detail": "05aee123b67fa6fe45df3e7167326591f077cd8b778b68dd8938cd5084d6aad9"
     },
     {
       "name": "dist forbidden API (eval)",
@@ -3807,7 +3807,7 @@
     {
       "name": "dist size within limit",
       "ok": true,
-      "detail": "64510 bytes"
+      "detail": "65163 bytes"
     },
     {
       "name": "install.html embeds the exact bookmarklet",
@@ -3817,7 +3817,7 @@
     {
       "name": "install.html loads nothing remote",
       "ok": true,
-      "detail": ""
+      "detail": "https://github.com/xiaoye-motdore/universal-ai-chat-exporter"
     }
   ]
 }

@@ -473,7 +473,6 @@ ${nested.join("\n")}` : ""}`;
     name: "ChatGPT",
     status: STATUS.VERIFIED,
     // live-verified 2026-10-16, see TEST-RESULTS.md
-    hosts: ["chatgpt.com", "chat.openai.com"],
     allowedPaths: [/^\/api\/auth\/session$/, /^\/backend-api\/conversation\/[0-9a-f-]{36}$/i],
     matches: (location2) => /(^|\.)chatgpt\.com$/.test(location2.hostname) || /(^|\.)chat\.openai\.com$/.test(location2.hostname),
     conversationId: (location2) => {
@@ -584,7 +583,7 @@ ${nested.join("\n")}` : ""}`;
     }
     return artifacts;
   }
-  var EXT_LANG = { py: "python", js: "javascript", jsx: "jsx", ts: "typescript", tsx: "tsx", md: "markdown", html: "html", css: "css", json: "json", sh: "bash", yml: "yaml", yaml: "yaml", sql: "sql", svg: "svg", java: "java", rb: "ruby", go: "go", rs: "rust", c: "c", cpp: "cpp" };
+  var EXT_LANG = { py: "python", js: "javascript", jsx: "jsx", ts: "typescript", tsx: "tsx", md: "markdown", html: "html", css: "css", json: "json", sh: "bash", yml: "yaml", yaml: "yaml", sql: "sql", svg: "svg" };
   function basename(path) {
     return String(path || "file").split("/").pop();
   }
@@ -659,7 +658,6 @@ ${nested.join("\n")}` : ""}`;
     name: "Claude",
     status: STATUS.VERIFIED,
     // live-verified 2026-10-16, see TEST-RESULTS.md
-    hosts: ["claude.ai"],
     allowedPaths: [/^\/api\/organizations$/, /^\/api\/organizations\/[0-9a-f-]{36}\/chat_conversations\/[0-9a-f-]{36}$/i],
     matches: (location2) => /(^|\.)claude\.ai$/.test(location2.hostname),
     conversationId: (location2) => {
@@ -858,7 +856,6 @@ ${nested.join("\n")}` : ""}`;
     name: "Gemini",
     status: STATUS.VERIFIED,
     // live-verified 2026-10-16, see TEST-RESULTS.md
-    hosts: ["gemini.google.com"],
     allowedPaths: [/^\/_\/BardChatUi\/data\/batchexecute$/],
     matches: (location2) => location2.hostname === "gemini.google.com",
     conversationId: (location2) => {
@@ -987,7 +984,6 @@ ${nested.join("\n")}` : ""}`;
     name: "Grok",
     status: STATUS.VERIFIED,
     // live-verified 2026-10-16, see TEST-RESULTS.md
-    hosts: ["grok.com"],
     allowedPaths: [/^\/rest\/app-chat\/conversations\/[0-9a-f-]{36}\/(response-node|load-responses)$/i],
     matches: (location2) => /(^|\.)grok\.com$/.test(location2.hostname),
     conversationId: (location2) => {
@@ -1071,7 +1067,6 @@ ${nested.join("\n")}` : ""}`;
     name: "Perplexity",
     status: STATUS.VERIFIED,
     // live-verified 2026-10-16, see TEST-RESULTS.md
-    hosts: ["www.perplexity.ai", "perplexity.ai"],
     allowedPaths: [/^\/rest\/thread\/[A-Za-z0-9._~%-]+$/],
     matches: (location2) => /(^|\.)perplexity\.ai$/.test(location2.hostname),
     conversationId: (location2) => {
@@ -1138,7 +1133,6 @@ ${nested.join("\n")}` : ""}`;
     id: "copilot",
     name: "Microsoft Copilot",
     status: STATUS.EXPERIMENTAL,
-    hosts: ["copilot.microsoft.com", "copilot.com"],
     allowedPaths: [/^\/c\/api\/conversations\/[A-Za-z0-9_-]+\/history$/],
     matches: (location2) => location2.hostname === "copilot.microsoft.com" || /(^|\.)copilot\.com$/.test(location2.hostname),
     conversationId: (location2) => {
@@ -1189,7 +1183,6 @@ ${nested.join("\n")}` : ""}`;
       id: "deepseek",
       name: "DeepSeek",
       status: STATUS.PLANNED,
-      hosts: ["chat.deepseek.com"],
       allowedPaths: [],
       matches: (location2) => location2.hostname === "chat.deepseek.com",
       conversationId: () => null,
@@ -1267,8 +1260,9 @@ ${nested.join("\n")}` : ""}`;
       download: "Download",
       close: "Close",
       error: "Export failed: {message}",
-      branches: "{count} messages have other versions (edits / regenerations). Markdown shows the selected branch; JSON contains all versions.",
-      dom_fallback: "Read from the rendered page because the API was unavailable. Only loaded messages are included."
+      branches: "{count} messages have other versions (edits or regenerations); JSON keeps them all.",
+      dom_fallback: "API unavailable, read from the page: only loaded messages are included.",
+      hint: "Only this conversation is read. Nothing leaves your browser."
     },
     zh: {
       loading: "\u6B63\u5728\u8BFB\u53D6\u5BF9\u8BDD\u2026",
@@ -1283,8 +1277,9 @@ ${nested.join("\n")}` : ""}`;
       download: "\u4E0B\u8F7D",
       close: "\u5173\u95ED",
       error: "\u5BFC\u51FA\u5931\u8D25\uFF1A{message}",
-      branches: "{count} \u6761\u6D88\u606F\u5B58\u5728\u5176\u4ED6\u7248\u672C\uFF08\u7F16\u8F91 / \u91CD\u65B0\u751F\u6210\uFF09\u3002Markdown \u53EA\u5305\u542B\u5F53\u524D\u5206\u652F\uFF1BJSON \u5305\u542B\u5168\u90E8\u7248\u672C\u3002",
-      dom_fallback: "\u63A5\u53E3\u4E0D\u53EF\u7528\uFF0C\u5DF2\u6539\u4E3A\u8BFB\u53D6\u9875\u9762\u5DF2\u6E32\u67D3\u5185\u5BB9\uFF0C\u53EA\u5305\u542B\u5DF2\u52A0\u8F7D\u7684\u6D88\u606F\u3002"
+      branches: "{count} \u6761\u6D88\u606F\u6709\u5176\u4ED6\u7248\u672C\uFF08\u7F16\u8F91\u6216\u91CD\u65B0\u751F\u6210\uFF09\uFF0CJSON \u4E2D\u4FDD\u7559\u5168\u90E8\u3002",
+      dom_fallback: "\u63A5\u53E3\u4E0D\u53EF\u7528\uFF0C\u5DF2\u6539\u8BFB\u9875\u9762\uFF0C\u53EA\u542B\u5DF2\u52A0\u8F7D\u7684\u6D88\u606F\u3002",
+      hint: "\u53EA\u8BFB\u53D6\u5F53\u524D\u5BF9\u8BDD\uFF0C\u4E0D\u4F1A\u4E0A\u4F20\u4EFB\u4F55\u5185\u5BB9\u3002"
     }
   };
   function t(key, params, lang) {
@@ -1299,28 +1294,31 @@ ${nested.join("\n")}` : ""}`;
   var ROOT_ID = "uace-panel";
   var STYLE_ID = "uace-style";
   var CSS = `
-#${ROOT_ID}{position:fixed;top:16px;right:16px;z-index:2147483647;width:320px;max-width:calc(100vw - 32px);
-box-sizing:border-box;padding:14px 16px;color:#111;background:#fff;border:1px solid #d9d9df;border-radius:12px;
-box-shadow:0 12px 32px rgba(0,0,0,.22);font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
-#${ROOT_ID} *{box-sizing:border-box}
-#${ROOT_ID} .uace-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-#${ROOT_ID} .uace-title{font-weight:700;font-size:14px}
-#${ROOT_ID} .uace-close{border:0;background:transparent;font-size:16px;cursor:pointer;color:#666;padding:2px 6px;border-radius:6px}
-#${ROOT_ID} .uace-close:hover{background:#eee;color:#111}
-#${ROOT_ID} .uace-status{margin:4px 0 8px;color:#333}
-#${ROOT_ID} .uace-meta{color:#666;font-size:12px;margin-bottom:8px}
-#${ROOT_ID} .uace-warn{background:#fff7e6;border:1px solid #ffd591;color:#613400;border-radius:8px;padding:8px 10px;margin:6px 0;font-size:12px}
-#${ROOT_ID} .uace-error{background:#fff1f0;border:1px solid #ffa39e;color:#5c0011;border-radius:8px;padding:8px 10px;font-size:12px}
-#${ROOT_ID} .uace-buttons{display:flex;gap:8px;margin-top:10px}
-#${ROOT_ID} .uace-btn{flex:1;border:1px solid #c9c9d1;background:#f6f6f8;color:#111;border-radius:8px;padding:8px 0;font:inherit;font-weight:600;cursor:pointer}
-#${ROOT_ID} .uace-btn:hover{background:#e9e9ef}
-#${ROOT_ID} .uace-spin{display:inline-block;width:12px;height:12px;border:2px solid #ccc;border-top-color:#333;border-radius:50%;
-vertical-align:-2px;margin-right:6px;animation:uace-spin .8s linear infinite}
+#${ROOT_ID}{--bg:#fff;--fg:#1a1a22;--mut:#6b6b78;--line:#e7e7ee;--btn:#f4f4f8;--btnh:#e9e9f1;--acc:#5b6cff;position:fixed;top:18px;right:18px;z-index:2147483647;width:344px;max-width:calc(100vw - 36px);box-sizing:border-box;padding:16px 18px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px #14142838,0 2px 8px #14142814;font:13px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;animation:uace-in .24s cubic-bezier(.2,.9,.25,1.15)}
+@media(prefers-color-scheme:dark){#${ROOT_ID}{--bg:#1d1d24;--fg:#f2f2f6;--mut:#9f9fac;--line:#34343f;--btn:#2a2a34;--btnh:#363642;--acc:#7b8aff}}
+@keyframes uace-in{from{opacity:0;transform:translateY(-8px) scale(.97)}}
 @keyframes uace-spin{to{transform:rotate(360deg)}}
-@media (prefers-color-scheme: dark){#${ROOT_ID}{background:#1f1f24;color:#eee;border-color:#3a3a44}
-#${ROOT_ID} .uace-status{color:#ddd}#${ROOT_ID} .uace-meta{color:#aaa}
-#${ROOT_ID} .uace-btn{background:#2b2b33;border-color:#45454f;color:#eee}#${ROOT_ID} .uace-btn:hover{background:#3a3a44}
-#${ROOT_ID} .uace-close{color:#aaa}#${ROOT_ID} .uace-close:hover{background:#333;color:#fff}}
+#${ROOT_ID} *{box-sizing:border-box;margin:0}
+.uace-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.uace-logo{flex:none;width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;background:linear-gradient(135deg,#6f86ff,#b36bff);box-shadow:0 4px 12px #6f86ff59}
+.uace-title{flex:1;font-weight:700;font-size:15px;letter-spacing:-.01em}
+#${ROOT_ID} .uace-close{border:0;background:none;color:var(--mut);font:15px/1 inherit;cursor:pointer;padding:6px;border-radius:8px}
+#${ROOT_ID} .uace-close:hover{background:var(--btn);color:var(--fg)}
+.uace-status{display:flex;align-items:center;gap:9px;font-weight:600;font-size:14px}
+.uace-dot{flex:none;width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px #22c55e33}
+.uace-dot.warn{background:#f59e0b;box-shadow:0 0 0 3px #f59e0b38}
+.uace-spin{flex:none;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:uace-spin .7s linear infinite}
+.uace-meta{color:var(--mut);font-size:12px;margin:3px 0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.uace-warn,.uace-error{border-radius:11px;padding:9px 11px;margin-top:10px;font-size:12px;line-height:1.45}
+.uace-warn{background:#f59e0b1c;border:1px solid #f59e0b59}
+.uace-error{background:#ef44441a;border:1px solid #ef444459}
+.uace-buttons{display:flex;gap:8px;margin-top:14px}
+#${ROOT_ID} .uace-btn{flex:1;border:1px solid var(--line);background:var(--btn);color:var(--fg);border-radius:11px;padding:9px 0;font:inherit;font-weight:650;cursor:pointer;transition:background .15s,transform .08s}
+#${ROOT_ID} .uace-btn:hover{background:var(--btnh)}
+#${ROOT_ID} .uace-btn:active{transform:scale(.96)}
+#${ROOT_ID} .uace-btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+#${ROOT_ID} .uace-btn.primary:hover{filter:brightness(1.08)}
+.uace-hint{color:var(--mut);font-size:11px;text-align:center;margin-top:11px}
 `;
   function el(doc, tag, className, text) {
     const node = doc.createElement(tag);
@@ -1342,6 +1340,7 @@ vertical-align:-2px;margin-right:6px;animation:uace-spin .8s linear infinite}
     root.setAttribute("role", "dialog");
     root.setAttribute("aria-label", "AI Chat Export");
     const head = el(doc, "div", "uace-head");
+    head.appendChild(el(doc, "span", "uace-logo", "\u{1F4E4}"));
     head.appendChild(el(doc, "span", "uace-title", "AI Chat Export"));
     const close = el(doc, "button", "uace-close", "\u2715");
     close.setAttribute("aria-label", t("close"));
@@ -1367,18 +1366,26 @@ vertical-align:-2px;margin-right:6px;animation:uace-spin .8s linear infinite}
         clear();
         body.appendChild(el(doc, "div", "uace-error", message));
       },
-      showResult({ statusText, metaText, warnings, buttons }) {
+      showResult({ statusText, metaText, warnings, partial, buttons }) {
         clear();
-        body.appendChild(el(doc, "div", "uace-status", statusText));
-        if (metaText) body.appendChild(el(doc, "div", "uace-meta", metaText));
+        const status = el(doc, "div", "uace-status");
+        status.appendChild(el(doc, "span", partial ? "uace-dot warn" : "uace-dot"));
+        status.appendChild(doc.createTextNode(statusText));
+        body.appendChild(status);
+        if (metaText) {
+          const meta = el(doc, "div", "uace-meta", metaText);
+          meta.title = metaText;
+          body.appendChild(meta);
+        }
         for (const w of warnings || []) body.appendChild(el(doc, "div", "uace-warn", w));
         const row = el(doc, "div", "uace-buttons");
-        for (const b of buttons) {
-          const btn = el(doc, "button", "uace-btn", b.label);
+        buttons.forEach((b, i) => {
+          const btn = el(doc, "button", i === 0 ? "uace-btn primary" : "uace-btn", b.label);
           btn.addEventListener("click", b.onClick);
           row.appendChild(btn);
-        }
+        });
         body.appendChild(row);
+        body.appendChild(el(doc, "div", "uace-hint", t("hint")));
       },
       remove() {
         root.remove();
@@ -1671,14 +1678,14 @@ article{background:#fff;border:1px solid #e5e5ea;border-radius:12px;padding:16px
 article.user{background:#eef3ff;border-color:#d3dffb}
 .role{font-weight:700;font-size:13px;text-transform:uppercase;color:#6e6e73;margin-bottom:8px}
 .role time{font-weight:400;text-transform:none;margin-left:8px}
-pre{background:#1e1e24;color:#f3f3f3;padding:12px 14px;border-radius:8px;overflow:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
-code{font:.92em ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.06);padding:1px 4px;border-radius:4px}
+pre{background:#1e1e24;color:#f3f3f3;padding:12px 14px;border-radius:8px;overflow:auto;font:13px/1.5 ui-monospace,Menlo,monospace}
+code{font:.92em ui-monospace,Menlo,monospace;background:#0000000f;padding:1px 4px;border-radius:4px}
 pre code{background:none;padding:0;font-size:inherit}
 table{border-collapse:collapse;margin:10px 0;display:block;overflow:auto}
 th,td{border:1px solid #d2d2d7;padding:6px 10px;text-align:left;vertical-align:top}th{background:#f0f0f5}
 blockquote{margin:8px 0;padding:4px 14px;border-left:3px solid #c7c7cc;color:#515154}
 img{max-width:100%;height:auto;border-radius:6px}
-.math{font-family:ui-monospace,monospace;white-space:pre-wrap;background:#fafafa;border:1px dashed #d2d2d7;padding:8px;border-radius:6px}
+.math{font-family:ui-monospace,monospace;white-space:pre-wrap;border:1px dashed #d2d2d7;padding:8px;border-radius:6px}
 hr{border:0;border-top:1px solid #e5e5ea;margin:16px 0}
 `;
   function blockHtml(b) {
@@ -1825,6 +1832,7 @@ ${articles}
         statusText: status,
         metaText: meta,
         warnings,
+        partial: conv.completeness === "partial",
         buttons: FORMATS.map((f) => ({
           label: f.label,
           onClick: () => downloadText(f.render(conv), buildFilename(adapter7.id, conv.title, f.ext), f.mime, doc)

@@ -14,7 +14,7 @@
 ## 安装
 
 1. 在本地用浏览器打开 [`install.html`](install.html)。
-2. 把页面上的 **AI Chat Export** 按钮拖到书签栏（Chrome：`⌘⇧B` / `Ctrl+Shift+B` 显示书签栏）。
+2. 把页面上的 **📤 AI Chat Export** 按钮拖到书签栏（Chrome：`⌘⇧B` / `Ctrl+Shift+B` 显示书签栏）。
 3. 没有拖拽条件时，展开页面底部的“手动安装 / 校验”，复制书签代码，新建书签并粘贴到“网址”栏。
 
 `install.html` 由构建脚本生成，内嵌的代码与 `dist/ai-chat-export.bookmarklet.js` 逐字节一致，页面上同时印有该文件的 SHA-256。
@@ -22,7 +22,7 @@
 ## 使用
 
 1. 打开一个具体对话：`chatgpt.com/c/…`、`claude.ai/chat/…`、`gemini.google.com/app/…`、`grok.com/c/…`、`perplexity.ai/search/…` 或 `copilot.microsoft.com/chats/…`。
-2. 点击书签栏上的 **AI Chat Export**。
+2. 点击书签栏上的 **📤 AI Chat Export**。
 3. 右上角出现面板：显示读取到的消息数、数据来源（接口 / 页面）、完整性提示与警告。
 4. 点击 **Markdown** / **JSON** / **HTML** 下载。文件名形如 `claude-2026-10-16-对话标题.md`。
 
@@ -131,7 +131,7 @@ npm run verify     # = build + 安全校验 + 测试
 - 图片与文档附件只导出元数据和同源链接，不下载二进制内容。
 - 不导出模型的思考过程（thinking / reasoning）与隐藏的系统消息。
 - 第一版不做批量导出全部历史、不做云同步。
-- 书签 URL 约 63.0 KB（64 510 字节，上限 65 536 字节，余量约 1 KB，新增平台前需先精简）；Chrome / Edge / Safari 可正常保存，Firefox 对超长书签 URL 的支持请自行验证。
+- 书签 URL 约 63.6 KB（65 163 字节，上限 65 536 字节，余量不足 0.5 KB，新增平台前需先精简）；Chrome / Edge / Safari 可正常保存，Firefox 对超长书签 URL 的支持请自行验证。
 
 ## 安全
 

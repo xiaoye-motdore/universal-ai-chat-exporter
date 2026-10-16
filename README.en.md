@@ -12,7 +12,7 @@ One bookmarklet that exports the **current ChatGPT / Claude / Gemini / Grok / Pe
 ## Install
 
 1. Open `install.html` in Chrome.
-2. Drag the **AI Chat Export** button onto the bookmarks bar (`⌘⇧B` / `Ctrl+Shift+B` shows it).
+2. Drag the **📤 AI Chat Export** button onto the bookmarks bar (`⌘⇧B` / `Ctrl+Shift+B` shows it).
 3. If you cannot drag, expand "Manual install" on that page, copy the code, and paste it as the URL of a new bookmark.
 
 The page embeds exactly `dist/ai-chat-export.bookmarklet.js`; its SHA-256 is printed on the page and in `dist/ai-chat-export.bookmarklet.sha256`.
@@ -20,7 +20,7 @@ The page embeds exactly `dist/ai-chat-export.bookmarklet.js`; its SHA-256 is pri
 ## Use
 
 1. Open a conversation: `chatgpt.com/c/…`, `claude.ai/chat/…`, `gemini.google.com/app/…`, `grok.com/c/…` or `perplexity.ai/search/…`.
-2. Click **AI Chat Export** in the bookmarks bar.
+2. Click **📤 AI Chat Export** in the bookmarks bar.
 3. A panel appears top-right with the message count, the data source (API or page) and any warnings.
 4. Click **Markdown**, **JSON** or **HTML** to download. File names look like `claude-2026-10-16-<title>.md`.
 

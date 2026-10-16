@@ -44,7 +44,6 @@ const adapter = {
   id: 'perplexity',
   name: 'Perplexity',
   status: STATUS.VERIFIED, // live-verified 2026-10-16, see TEST-RESULTS.md
-  hosts: ['www.perplexity.ai', 'perplexity.ai'],
   allowedPaths: [/^\/rest\/thread\/[A-Za-z0-9._~%-]+$/],
 
   matches: (location) => /(^|\.)perplexity\.ai$/.test(location.hostname),

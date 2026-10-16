@@ -130,7 +130,6 @@ const adapter = {
   id: 'gemini',
   name: 'Gemini',
   status: STATUS.VERIFIED, // live-verified 2026-10-16, see TEST-RESULTS.md
-  hosts: ['gemini.google.com'],
   allowedPaths: [/^\/_\/BardChatUi\/data\/batchexecute$/],
 
   matches: (location) => location.hostname === 'gemini.google.com',

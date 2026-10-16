@@ -61,7 +61,7 @@ function collectArtifacts(messages, warn) {
   return artifacts
 }
 
-const EXT_LANG = { py: 'python', js: 'javascript', jsx: 'jsx', ts: 'typescript', tsx: 'tsx', md: 'markdown', html: 'html', css: 'css', json: 'json', sh: 'bash', yml: 'yaml', yaml: 'yaml', sql: 'sql', svg: 'svg', java: 'java', rb: 'ruby', go: 'go', rs: 'rust', c: 'c', cpp: 'cpp' }
+const EXT_LANG = { py: 'python', js: 'javascript', jsx: 'jsx', ts: 'typescript', tsx: 'tsx', md: 'markdown', html: 'html', css: 'css', json: 'json', sh: 'bash', yml: 'yaml', yaml: 'yaml', sql: 'sql', svg: 'svg' }
 
 function basename(path) {
   return String(path || 'file').split('/').pop()
@@ -144,7 +144,6 @@ const adapter = {
   id: 'claude',
   name: 'Claude',
   status: STATUS.VERIFIED, // live-verified 2026-10-16, see TEST-RESULTS.md
-  hosts: ['claude.ai'],
   allowedPaths: [/^\/api\/organizations$/, /^\/api\/organizations\/[0-9a-f-]{36}\/chat_conversations\/[0-9a-f-]{36}$/i],
 
   matches: (location) => /(^|\.)claude\.ai$/.test(location.hostname),

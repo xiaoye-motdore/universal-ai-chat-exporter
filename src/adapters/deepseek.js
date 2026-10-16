@@ -37,7 +37,6 @@ const adapter = {
   id: 'deepseek',
   name: 'DeepSeek',
   status: STATUS.EXPERIMENTAL,
-  hosts: ['chat.deepseek.com'],
   allowedPaths: [/^\/api\/v0\/chat\/history_messages$/],
 
   matches: (location) => location.hostname === 'chat.deepseek.com',

@@ -15,14 +15,14 @@ article{background:#fff;border:1px solid #e5e5ea;border-radius:12px;padding:16px
 article.user{background:#eef3ff;border-color:#d3dffb}
 .role{font-weight:700;font-size:13px;text-transform:uppercase;color:#6e6e73;margin-bottom:8px}
 .role time{font-weight:400;text-transform:none;margin-left:8px}
-pre{background:#1e1e24;color:#f3f3f3;padding:12px 14px;border-radius:8px;overflow:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace}
-code{font:.92em ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.06);padding:1px 4px;border-radius:4px}
+pre{background:#1e1e24;color:#f3f3f3;padding:12px 14px;border-radius:8px;overflow:auto;font:13px/1.5 ui-monospace,Menlo,monospace}
+code{font:.92em ui-monospace,Menlo,monospace;background:#0000000f;padding:1px 4px;border-radius:4px}
 pre code{background:none;padding:0;font-size:inherit}
 table{border-collapse:collapse;margin:10px 0;display:block;overflow:auto}
 th,td{border:1px solid #d2d2d7;padding:6px 10px;text-align:left;vertical-align:top}th{background:#f0f0f5}
 blockquote{margin:8px 0;padding:4px 14px;border-left:3px solid #c7c7cc;color:#515154}
 img{max-width:100%;height:auto;border-radius:6px}
-.math{font-family:ui-monospace,monospace;white-space:pre-wrap;background:#fafafa;border:1px dashed #d2d2d7;padding:8px;border-radius:6px}
+.math{font-family:ui-monospace,monospace;white-space:pre-wrap;border:1px dashed #d2d2d7;padding:8px;border-radius:6px}
 hr{border:0;border-top:1px solid #e5e5ea;margin:16px 0}
 `
 

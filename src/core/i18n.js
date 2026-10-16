@@ -12,8 +12,9 @@ const STRINGS = {
     download: 'Download',
     close: 'Close',
     error: 'Export failed: {message}',
-    branches: '{count} messages have other versions (edits / regenerations). Markdown shows the selected branch; JSON contains all versions.',
-    dom_fallback: 'Read from the rendered page because the API was unavailable. Only loaded messages are included.',
+    branches: '{count} messages have other versions (edits or regenerations); JSON keeps them all.',
+    dom_fallback: 'API unavailable, read from the page: only loaded messages are included.',
+    hint: 'Only this conversation is read. Nothing leaves your browser.',
   },
   zh: {
     loading: '正在读取对话…',
@@ -28,8 +29,9 @@ const STRINGS = {
     download: '下载',
     close: '关闭',
     error: '导出失败：{message}',
-    branches: '{count} 条消息存在其他版本（编辑 / 重新生成）。Markdown 只包含当前分支；JSON 包含全部版本。',
-    dom_fallback: '接口不可用，已改为读取页面已渲染内容，只包含已加载的消息。',
+    branches: '{count} 条消息有其他版本（编辑或重新生成），JSON 中保留全部。',
+    dom_fallback: '接口不可用，已改读页面，只含已加载的消息。',
+    hint: '只读取当前对话，不会上传任何内容。',
   },
 }
 

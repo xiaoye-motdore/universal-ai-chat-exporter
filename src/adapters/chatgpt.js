@@ -124,7 +124,6 @@ const adapter = {
   id: 'chatgpt',
   name: 'ChatGPT',
   status: STATUS.VERIFIED, // live-verified 2026-10-16, see TEST-RESULTS.md
-  hosts: ['chatgpt.com', 'chat.openai.com'],
   allowedPaths: [/^\/api\/auth\/session$/, /^\/backend-api\/conversation\/[0-9a-f-]{36}$/i],
 
   matches: (location) => /(^|\.)chatgpt\.com$/.test(location.hostname) || /(^|\.)chat\.openai\.com$/.test(location.hostname),

@@ -45,7 +45,6 @@ const adapter = {
   id: 'grok',
   name: 'Grok',
   status: STATUS.VERIFIED, // live-verified 2026-10-16, see TEST-RESULTS.md
-  hosts: ['grok.com'],
   allowedPaths: [/^\/rest\/app-chat\/conversations\/[0-9a-f-]{36}\/(response-node|load-responses)$/i],
 
   matches: (location) => /(^|\.)grok\.com$/.test(location.hostname),

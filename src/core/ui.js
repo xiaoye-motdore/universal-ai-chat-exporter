@@ -7,28 +7,31 @@ import { t } from './i18n.js'
 const ROOT_ID = 'uace-panel'
 const STYLE_ID = 'uace-style'
 const CSS = `
-#${ROOT_ID}{position:fixed;top:16px;right:16px;z-index:2147483647;width:320px;max-width:calc(100vw - 32px);
-box-sizing:border-box;padding:14px 16px;color:#111;background:#fff;border:1px solid #d9d9df;border-radius:12px;
-box-shadow:0 12px 32px rgba(0,0,0,.22);font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
-#${ROOT_ID} *{box-sizing:border-box}
-#${ROOT_ID} .uace-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-#${ROOT_ID} .uace-title{font-weight:700;font-size:14px}
-#${ROOT_ID} .uace-close{border:0;background:transparent;font-size:16px;cursor:pointer;color:#666;padding:2px 6px;border-radius:6px}
-#${ROOT_ID} .uace-close:hover{background:#eee;color:#111}
-#${ROOT_ID} .uace-status{margin:4px 0 8px;color:#333}
-#${ROOT_ID} .uace-meta{color:#666;font-size:12px;margin-bottom:8px}
-#${ROOT_ID} .uace-warn{background:#fff7e6;border:1px solid #ffd591;color:#613400;border-radius:8px;padding:8px 10px;margin:6px 0;font-size:12px}
-#${ROOT_ID} .uace-error{background:#fff1f0;border:1px solid #ffa39e;color:#5c0011;border-radius:8px;padding:8px 10px;font-size:12px}
-#${ROOT_ID} .uace-buttons{display:flex;gap:8px;margin-top:10px}
-#${ROOT_ID} .uace-btn{flex:1;border:1px solid #c9c9d1;background:#f6f6f8;color:#111;border-radius:8px;padding:8px 0;font:inherit;font-weight:600;cursor:pointer}
-#${ROOT_ID} .uace-btn:hover{background:#e9e9ef}
-#${ROOT_ID} .uace-spin{display:inline-block;width:12px;height:12px;border:2px solid #ccc;border-top-color:#333;border-radius:50%;
-vertical-align:-2px;margin-right:6px;animation:uace-spin .8s linear infinite}
+#${ROOT_ID}{--bg:#fff;--fg:#1a1a22;--mut:#6b6b78;--line:#e7e7ee;--btn:#f4f4f8;--btnh:#e9e9f1;--acc:#5b6cff;position:fixed;top:18px;right:18px;z-index:2147483647;width:344px;max-width:calc(100vw - 36px);box-sizing:border-box;padding:16px 18px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px #14142838,0 2px 8px #14142814;font:13px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;animation:uace-in .24s cubic-bezier(.2,.9,.25,1.15)}
+@media(prefers-color-scheme:dark){#${ROOT_ID}{--bg:#1d1d24;--fg:#f2f2f6;--mut:#9f9fac;--line:#34343f;--btn:#2a2a34;--btnh:#363642;--acc:#7b8aff}}
+@keyframes uace-in{from{opacity:0;transform:translateY(-8px) scale(.97)}}
 @keyframes uace-spin{to{transform:rotate(360deg)}}
-@media (prefers-color-scheme: dark){#${ROOT_ID}{background:#1f1f24;color:#eee;border-color:#3a3a44}
-#${ROOT_ID} .uace-status{color:#ddd}#${ROOT_ID} .uace-meta{color:#aaa}
-#${ROOT_ID} .uace-btn{background:#2b2b33;border-color:#45454f;color:#eee}#${ROOT_ID} .uace-btn:hover{background:#3a3a44}
-#${ROOT_ID} .uace-close{color:#aaa}#${ROOT_ID} .uace-close:hover{background:#333;color:#fff}}
+#${ROOT_ID} *{box-sizing:border-box;margin:0}
+.uace-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.uace-logo{flex:none;width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;background:linear-gradient(135deg,#6f86ff,#b36bff);box-shadow:0 4px 12px #6f86ff59}
+.uace-title{flex:1;font-weight:700;font-size:15px;letter-spacing:-.01em}
+#${ROOT_ID} .uace-close{border:0;background:none;color:var(--mut);font:15px/1 inherit;cursor:pointer;padding:6px;border-radius:8px}
+#${ROOT_ID} .uace-close:hover{background:var(--btn);color:var(--fg)}
+.uace-status{display:flex;align-items:center;gap:9px;font-weight:600;font-size:14px}
+.uace-dot{flex:none;width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px #22c55e33}
+.uace-dot.warn{background:#f59e0b;box-shadow:0 0 0 3px #f59e0b38}
+.uace-spin{flex:none;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:uace-spin .7s linear infinite}
+.uace-meta{color:var(--mut);font-size:12px;margin:3px 0 0 18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.uace-warn,.uace-error{border-radius:11px;padding:9px 11px;margin-top:10px;font-size:12px;line-height:1.45}
+.uace-warn{background:#f59e0b1c;border:1px solid #f59e0b59}
+.uace-error{background:#ef44441a;border:1px solid #ef444459}
+.uace-buttons{display:flex;gap:8px;margin-top:14px}
+#${ROOT_ID} .uace-btn{flex:1;border:1px solid var(--line);background:var(--btn);color:var(--fg);border-radius:11px;padding:9px 0;font:inherit;font-weight:650;cursor:pointer;transition:background .15s,transform .08s}
+#${ROOT_ID} .uace-btn:hover{background:var(--btnh)}
+#${ROOT_ID} .uace-btn:active{transform:scale(.96)}
+#${ROOT_ID} .uace-btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+#${ROOT_ID} .uace-btn.primary:hover{filter:brightness(1.08)}
+.uace-hint{color:var(--mut);font-size:11px;text-align:center;margin-top:11px}
 `
 
 function el(doc, tag, className, text) {
@@ -54,6 +57,7 @@ export function createPanel(doc) {
   root.setAttribute('aria-label', 'AI Chat Export')
 
   const head = el(doc, 'div', 'uace-head')
+  head.appendChild(el(doc, 'span', 'uace-logo', '\u{1F4E4}'))
   head.appendChild(el(doc, 'span', 'uace-title', 'AI Chat Export'))
   const close = el(doc, 'button', 'uace-close', '✕')
   close.setAttribute('aria-label', t('close'))
@@ -82,18 +86,26 @@ export function createPanel(doc) {
       clear()
       body.appendChild(el(doc, 'div', 'uace-error', message))
     },
-    showResult({ statusText, metaText, warnings, buttons }) {
+    showResult({ statusText, metaText, warnings, partial, buttons }) {
       clear()
-      body.appendChild(el(doc, 'div', 'uace-status', statusText))
-      if (metaText) body.appendChild(el(doc, 'div', 'uace-meta', metaText))
+      const status = el(doc, 'div', 'uace-status')
+      status.appendChild(el(doc, 'span', partial ? 'uace-dot warn' : 'uace-dot'))
+      status.appendChild(doc.createTextNode(statusText))
+      body.appendChild(status)
+      if (metaText) {
+        const meta = el(doc, 'div', 'uace-meta', metaText)
+        meta.title = metaText
+        body.appendChild(meta)
+      }
       for (const w of warnings || []) body.appendChild(el(doc, 'div', 'uace-warn', w))
       const row = el(doc, 'div', 'uace-buttons')
-      for (const b of buttons) {
-        const btn = el(doc, 'button', 'uace-btn', b.label)
+      buttons.forEach((b, i) => {
+        const btn = el(doc, 'button', i === 0 ? 'uace-btn primary' : 'uace-btn', b.label)
         btn.addEventListener('click', b.onClick)
         row.appendChild(btn)
-      }
+      })
       body.appendChild(row)
+      body.appendChild(el(doc, 'div', 'uace-hint', t('hint')))
     },
     remove() {
       root.remove()
