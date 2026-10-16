@@ -2,6 +2,8 @@
 
 *[中文说明 / Chinese README](README.md)*
 
+> **Install in one step: open <https://xiaoye-motdore.github.io/universal-ai-chat-exporter/> and drag the 📤 AI Chat Export button to your bookmarks bar.**
+
 One bookmarklet that exports the **current ChatGPT / Claude / Gemini / Grok / Perplexity** conversation to **Markdown, JSON or HTML**. No browser extension, no server, no account.
 
 - Everything runs locally. The whole script lives inside the bookmark and only runs when you click it.
@@ -11,7 +13,7 @@ One bookmarklet that exports the **current ChatGPT / Claude / Gemini / Grok / Pe
 
 ## Install
 
-1. Open `install.html` in Chrome.
+1. Open <https://xiaoye-motdore.github.io/universal-ai-chat-exporter/> in Chrome (it is this repository's `install.html`, served as-is by GitHub Pages; you can also open the file locally).
 2. Drag the **📤 AI Chat Export** button onto the bookmarks bar (`⌘⇧B` / `Ctrl+Shift+B` shows it).
 3. If you cannot drag, expand "Manual install" on that page, copy the code, and paste it as the URL of a new bookmark.
 

@@ -2,6 +2,8 @@
 
 *[English README](README.en.md)*
 
+> **一键安装：打开 <https://xiaoye-motdore.github.io/universal-ai-chat-exporter/>，把页面上的 📤 AI Chat Export 按钮拖到书签栏即可。**
+
 一个书签（Bookmarklet），在 **ChatGPT / Claude / Gemini / Grok / Perplexity / Microsoft Copilot** 的对话页面上一键导出当前完整对话为 **Markdown、JSON 或 HTML**。
 
 - 不需要浏览器扩展，不需要打开开发者工具，不需要改代码。
@@ -13,7 +15,7 @@
 
 ## 安装
 
-1. 在本地用浏览器打开 [`install.html`](install.html)。
+1. 打开安装页 <https://xiaoye-motdore.github.io/universal-ai-chat-exporter/>（它就是仓库里的 [`install.html`](install.html)，由 GitHub Pages 原样托管，不加载任何外部资源；也可以把仓库下载到本地后直接双击打开）。
 2. 把页面上的 **📤 AI Chat Export** 按钮拖到书签栏（Chrome：`⌘⇧B` / `Ctrl+Shift+B` 显示书签栏）。
 3. 没有拖拽条件时，展开页面底部的“手动安装 / 校验”，复制书签代码，新建书签并粘贴到“网址”栏。
 

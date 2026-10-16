@@ -6,7 +6,7 @@
  *   dist/ai-chat-export.bookmarklet.js    javascript: URL (percent-encoded minified bundle)
  *   dist/ai-chat-export.bookmarklet.sha256
  *   dist/build-info.json
- *   install.html                          generated from build/install.template.html
+ *   install.html, index.html              generated from build/install.template.html (index.html = GitHub Pages entry)
  *
  * No timestamps are embedded, so the same sources always yield the same bytes.
  */
@@ -64,6 +64,8 @@ const page = template
   .replace(/{{SHA256}}/g, sha256)
   .replace(/{{SIZE_KB}}/g, (info.bytes.bookmarklet / 1024).toFixed(1))
 writeFileSync(resolve(root, 'install.html'), page)
+// index.html is the same page, so GitHub Pages serves the installer at the repository root URL.
+writeFileSync(resolve(root, 'index.html'), page)
 
 console.log(`bundle: ${info.bytes.minified} B minified, bookmarklet: ${info.bytes.bookmarklet} B (limit ${MAX_BOOKMARKLET_BYTES})`)
 console.log(`sha256: ${sha256}`)
